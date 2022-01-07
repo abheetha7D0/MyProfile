@@ -118,47 +118,177 @@
             font-family: myriad pro;
         }
 
-        .about-me-img > img {
-            position: absolute;
-            left: 10px;
-            width: 500px;
-            height: 500px;
-            display: flex;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-        }
 
         .about-me-text-container {
-            left: 15%;
-            width: 60%;
-            height: 400px;
+            width: 90%;
+            height: 500px;
             border-radius: 20px;
             background-color: white;
             box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
             display: flex;
-            margin: 5% auto 10px auto;
+            margin: 1% auto 20px auto;
             position: relative;
+            justify-content: space-evenly;
             align-items: center;
 
         }
 
-        .about-me-text-container > section:nth-child(1) > h2 {
+        .about-me-text-container > img {
+            height: 300px;
+            border-radius: 25px;
+            box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.2);
+        }
 
-            left: 10%;
+        .about-me-text-container > div {
+            width: 800px;
+        }
+
+        .about-me-text-container > div > p:nth-child(1) {
             color: #424242;
             font-family: myriad pro;
             font-weight: bold;
             font-size: 30px;
-            line-height: 0px;
+            line-height: 0;
         }
 
-        .about-me-text-container > section:nth-child(1) > p {
-            position: relative;
+        .about-me-text-container > div > p:nth-child(2) {
             color: #262626;
-            font-family: "Calibri Light";
+            font-family: Calibri Light;
             font-weight: bold;
             font-size: 20px;
+            font-weight: bold;
         }
 
+        .about-me-text-container > button {
+            position: absolute;
+            left: 13%;
+            bottom: 5%;
+            width: 120px;
+            height: 40px;
+            color: #ffffff;
+            outline: none;
+            border: none;
+            font-family: Calibri;
+            background-color: #111111;
+            border-radius: 5px;
+        }
+
+        .about-me-text-container > button:hover {
+            position: absolute;
+            left: 13%;
+            bottom: 5%;
+            width: 120px;
+            height: 40px;
+            color: #0a0808;
+            outline: #0a0a0a;
+            border: 2px solid #000000;
+            font-family: Calibri;
+            font-weight: bold;
+            background-color: #e5e5e5;
+            border-radius: 5px;
+        }
+
+        #project > h1 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .project-container > section {
+            width: 300px;
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #2e3136;
+            box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .project-container > section:nth-child(1) {
+            background-image: url("assets/images/css.png");
+        }
+
+        .project-container > section:nth-child(2) {
+            background-image: url("assets/images/css.png");
+        }
+
+        .project-container > section:nth-child(3) {
+            background-image: url("assets/images/css.png");
+        }
+
+        .project-container > section:nth-child(4) {
+            background-image: url("assets/images/css.png");
+        }
+
+        .project-container > section:nth-child(1) > span,
+        .project-container > section:nth-child(2) > span,
+        .project-container > section:nth-child(3) > span,
+        .project-container > section:nth-child(4) > span {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Calibri;
+            font-weight: bold;
+        }
+        .project-container > section:nth-child(1) > p:nth-child(2),
+        .project-container > section:nth-child(2) > p:nth-child(2),
+        .project-container > section:nth-child(3) > p:nth-child(2),
+        .project-container > section:nth-child(4) > p:nth-child(2) {
+            color: #e5e5e5;
+            font-size: 23px;
+            font-weight: bold;
+            line-height: 0;
+        }
+        .project-container > section:nth-child(1) > p:nth-child(3),
+        .project-container > section:nth-child(2) > p:nth-child(3),
+        .project-container > section:nth-child(3) > p:nth-child(3),
+        .project-container > section:nth-child(4) > p:nth-child(3) {
+            color: #dedede;
+            font-size: 35px;
+            text-align: center;
+            width: 230px;
+            margin: 0px 0px 20px 0px;
+        }
+        .project-container > section:nth-child(1) > a > button,
+        .project-container > section:nth-child(2) > a > button,
+        .project-container > section:nth-child(3) > a > button,
+        .project-container > section:nth-child(4) > a > button{
+            width: 100px;
+            height: 30px;
+            color: #eeeeee;
+            background-color: black;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .project-container > section:nth-child(1) > a > button:hover,
+        .project-container > section:nth-child(2) > a > button:hover,
+        .project-container > section:nth-child(3) > a > button:hover,
+        .project-container > section:nth-child(4) > a > button:hover{
+            width: 100px;
+            height: 30px;
+            background-color: #e0e0e0;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: #171717;
+            font-family: Calibri;
+            font-weight: bold;
+            box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -189,34 +319,54 @@
 
     <section id="about-me">
         <h2 align="center">About Me</h2>
-        <section class="about-me-img">
-            <img src="assets/images/me.JPG">
-        </section>
+
         <section class="about-me-text-container">
-            <section>
-                <h2>Hello Visitor</h2>
+
+            <img src="assets/images/me.JPG">
+            <button>
+                Download CV
+            </button>
+            <div>
+                <p>Hello Visitor</p>
                 <p>
                     Hello, My name is H A Dilushan. Excellent IT skills, especially with design and
                     photo-editing
                     software. Exceptional creativity and innovation. Excellent time management and organizational
                     skills. Accuracy and attention to detail. An understanding of the latest trends and their role
                     within a commercial environment. Professional approach to time, costs and deadlines.</p>
-            </section>
-            <section>
 
-            </section>
+            </div>
         </section>
     </section>
     <section id="project">
         <h1>Project</h1>
-        <section>
-            <a href="myProjects/css/Layouts/Assignment-1.html">Assignment 1</a>
-        </section>
-        <section>
-            <a href="myProjects/css/Layouts/Assignment-2.html">Assignment 2</a>
-        </section>
-        <section>
-            <a href="myProjects/css/Layouts/Assignment-1.html"></a>
+        <section class="project-container">
+
+            <section>
+                <span>1</span>
+                <p>Case 1</p>
+                <p>Navigation transition</p>
+               <a href="myProjects/css/Transitions/case-1.html"><button> Show</button></a>
+
+            </section>
+            <section>
+                <span>2</span>
+                <p>Case 2</p>
+                <p>Circle Border transition</p>
+                <a href="myProjects/css/Transitions/case-2.html"><button> Show</button></a>
+            </section>
+            <section>
+                <span>3</span>
+                <p>Case 3</p>
+                <p>Basic Rotation with animation</p>
+                <a href="myProjects/css/ Animations/case-1.html"><button> Show</button></a>
+            </section>
+            <section>
+                <span>4</span>
+                <p>Case 4</p>
+                <p>Water Drop Animation</p>
+                 <a href="myProjects/css/Layouts/Assignment-2.html"><button>Show</button></a>
+            </section>
         </section>
     </section>
 
