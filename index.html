@@ -6,7 +6,9 @@
     <title>My Profile</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/images/icon.png" rel="icon">
-    <meta content="IJSE, CMJD, Software Engineer" name="keywords">
+    <meta content="Software Engineer hire" name="description">
+    <meta content="IJSE, Software Engineer, Abheetha Dilushan, Web Designer, Abheetha" name="keywords">
+    <meta content="Abheetha Dilushan" name="author">
     <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/css/fonts/css/all.css" rel="stylesheet">
     <style>
@@ -68,7 +70,7 @@
 
         header > section > nav > ul > li > a:hover {
             cursor: pointer;
-            color: #00ffff;
+            color: #575757;
         }
 
 
@@ -211,7 +213,7 @@
             border: 2px solid #000000;
             font-family: Calibri;
             font-weight: bold;
-            background-color: #e5e5e5;
+            background-color: transparent;
             border-radius: 5px;
         }
 
@@ -250,51 +252,37 @@
         }
 
         .project-container > section:nth-child(1) {
-            background-image: url("assets/images/css.png");
+            background-image: url("assets/images/case-1.png");
         }
 
         .project-container > section:nth-child(2) {
-            background-image: url("assets/images/css.png");
+            background-image: url("assets/images/case-2.png");
         }
 
         .project-container > section:nth-child(3) {
-            background-image: url("assets/images/css.png");
+            background-image: url("assets/images/case-3.png");
         }
 
         .project-container > section:nth-child(4) {
-            background-image: url("assets/images/css.png");
+            background-image: url("assets/images/case-4.png");
         }
 
-        .project-container > section:nth-child(1) > span,
-        .project-container > section:nth-child(2) > span,
-        .project-container > section:nth-child(3) > span,
-        .project-container > section:nth-child(4) > span {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Calibri;
+
+        .project-container > section:nth-child(1) > p:nth-child(1),
+        .project-container > section:nth-child(2) > p:nth-child(1),
+        .project-container > section:nth-child(3) > p:nth-child(1),
+        .project-container > section:nth-child(4) > p:nth-child(1) {
+            color: #404040;
+            font-size: 23px;
             font-weight: bold;
+            line-height: 0;
         }
 
         .project-container > section:nth-child(1) > p:nth-child(2),
         .project-container > section:nth-child(2) > p:nth-child(2),
         .project-container > section:nth-child(3) > p:nth-child(2),
         .project-container > section:nth-child(4) > p:nth-child(2) {
-            color: #e5e5e5;
-            font-size: 23px;
-            font-weight: bold;
-            line-height: 0;
-        }
-
-        .project-container > section:nth-child(1) > p:nth-child(3),
-        .project-container > section:nth-child(2) > p:nth-child(3),
-        .project-container > section:nth-child(3) > p:nth-child(3),
-        .project-container > section:nth-child(4) > p:nth-child(3) {
-            color: #dedede;
+            color: #383838;
             font-size: 35px;
             text-align: center;
             width: 230px;
@@ -322,8 +310,8 @@
 
             width: 100px;
             height: 30px;
-            background-color: #e0e0e0;
-            border: 1px solid black;
+            background-color: transparent;
+            border: 2px solid black;
             border-radius: 5px;
             color: #171717;
             font-family: Calibri;
@@ -374,7 +362,7 @@
             line-height: 30px;
             font-weight: 300;
             color: #000000;
-            opacity: 25%;
+            opacity: 60%;
         }
 
         @media only screen and (min-width: 768px) {
@@ -424,7 +412,6 @@
                 left: -30px;
             }
         }
-
 
         #gallery > h1 {
             color: white;
@@ -535,7 +522,7 @@
             align-items: center;
         }
 
-        .contact-container  > h2 {
+        .contact-container > h2 {
             color: #1d1d1d;
             text-align: center;
             font-size: 30px;
@@ -593,10 +580,10 @@
             border-radius: 5px;
         }
 
-        .contact-container > section:nth-child(2) > form > button:hover {
-            background: #e5e5e5;
+        .contact-container > section > section:nth-child(2) > form > button:hover {
+            background: transparent;
             color: #131313;
-            border: 1px solid black;
+            border: 2px solid black;
         }
     </style>
 </head>
@@ -631,7 +618,6 @@
         </section>
 
     </section>
-
     <section id="about-me">
         <h2 align="center">About Me</h2>
 
@@ -657,42 +643,37 @@
         <h1>Project</h1>
         <section class="project-container">
 
-            <section>
-                <span>1</span>
-                <p>Case 1</p>
-                <p>Navigation transition</p>
-                <a href="myProjects/css/Transitions/case-1.html">
-                    <button> Show</button>
-                </a>
+                <section>
+                    <p>Case 1</p>
+                    <p>Navigation transition</p>
+                    <a href="myProjects/css/Transitions/case-1.html">
+                        <button> Show</button>
+                    </a>
+                </section>
+                <section>
+                    <p>Case 2</p>
+                    <p>Circle Border transition</p>
+                    <a href="myProjects/css/Transitions/case-2.html">
+                        <button> Show</button>
+                    </a>
+                </section>
+                <section>
+                    <p>Case 3</p>
+                    <p>Basic Rotation with animation</p>
+                    <a href="myProjects/css/Animations/case-1.html">
+                        <button> Show</button>
+                    </a>
+                </section>
+                <section>
+                    <p>Case 4</p>
+                    <p>Water Drop Animation</p>
+                    <a href="myProjects/css/Animations/case-2.html">
+                        <button>Show</button>
+                    </a>
+                </section>
 
-            </section>
-            <section>
-                <span>2</span>
-                <p>Case 2</p>
-                <p>Circle Border transition</p>
-                <a href="myProjects/css/Transitions/case-2.html">
-                    <button> Show</button>
-                </a>
-            </section>
-            <section>
-                <span>3</span>
-                <p>Case 3</p>
-                <p>Basic Rotation with animation</p>
-                <a href="myProjects/css/ Animations/case-1.html">
-                    <button> Show</button>
-                </a>
-            </section>
-            <section>
-                <span>4</span>
-                <p>Case 4</p>
-                <p>Water Drop Animation</p>
-                <a href="myProjects/css/Layouts/Assignment-2.html">
-                    <button>Show</button>
-                </a>
-            </section>
         </section>
     </section>
-
     <section id="education" class="edu-container">
         <h1>Education</h1>
         <div class="edu-line">
@@ -719,8 +700,6 @@
             </ul>
         </div>
     </section>
-
-
     <section id="gallery">
         <h1>Gallery</h1>
         <main class="gallery-container">
@@ -734,7 +713,6 @@
 
 
     </section>
-
     <section id="contact" class="contact-container">
         <h2>Contact</h2>
         <section>
