@@ -182,13 +182,12 @@
 
         .about-me-text-container > div > p:nth-child(2) {
             color: #262626;
-            font-family: Calibri Light;
+            font-family: Calibri Light, serif;
             font-weight: bold;
             font-size: 20px;
-            font-weight: bold;
         }
 
-        .about-me-text-container > button {
+        .about-me-text-container > a > button {
             position: absolute;
             left: 13%;
             bottom: 5%;
@@ -197,12 +196,12 @@
             color: #ffffff;
             outline: none;
             border: none;
-            font-family: Calibri;
+            font-family: Calibri, serif;
             background-color: #111111;
             border-radius: 5px;
         }
 
-        .about-me-text-container > button:hover {
+        .about-me-text-container > a > button:hover {
             position: absolute;
             left: 13%;
             bottom: 5%;
@@ -225,99 +224,86 @@
         }
 
         #project > h1 {
-            color: white;
+            color: #ffffff;
             text-align: center;
             font-size: 40px;
 
         }
 
-        .project-container > section {
+        .project-main-container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .project-single-move-card {
             width: 300px;
             height: 300px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #2e3136;
-            box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+
+            position: relative;
         }
 
-        .project-container {
-            width: 1500px;
-            display: flex;
-            justify-content: space-between;
-            margin: 1% auto 20px auto;
-        }
-
-        .project-container > section:nth-child(1) {
-            background-image: url("assets/images/case-1.png");
-        }
-
-        .project-container > section:nth-child(2) {
-            background-image: url("assets/images/case-2.png");
-        }
-
-        .project-container > section:nth-child(3) {
-            background-image: url("assets/images/case-3.png");
-        }
-
-        .project-container > section:nth-child(4) {
-            background-image: url("assets/images/case-4.png");
-        }
-
-
-        .project-container > section:nth-child(1) > p:nth-child(1),
-        .project-container > section:nth-child(2) > p:nth-child(1),
-        .project-container > section:nth-child(3) > p:nth-child(1),
-        .project-container > section:nth-child(4) > p:nth-child(1) {
-            color: #404040;
-            font-size: 23px;
-            font-weight: bold;
-            line-height: 0;
-        }
-
-        .project-container > section:nth-child(1) > p:nth-child(2),
-        .project-container > section:nth-child(2) > p:nth-child(2),
-        .project-container > section:nth-child(3) > p:nth-child(2),
-        .project-container > section:nth-child(4) > p:nth-child(2) {
-            color: #383838;
-            font-size: 35px;
+        .project-hover {
+            position: absolute;
+            background: transparent;
             text-align: center;
-            width: 230px;
-            margin: 0px 0px 20px 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
         }
 
-        .project-container > section:nth-child(1) > a > button,
-        .project-container > section:nth-child(2) > a > button,
-        .project-container > section:nth-child(3) > a > button,
-        .project-container > section:nth-child(4) > a > button {
-
-            width: 100px;
-            height: 30px;
-            color: #eeeeee;
-            background-color: black;
-            border: none;
-            outline: none;
-            border-radius: 5px;
-        }
-
-        .project-container > section:nth-child(1) > a > button:hover,
-        .project-container > section:nth-child(2) > a > button:hover,
-        .project-container > section:nth-child(3) > a > button:hover,
-        .project-container > section:nth-child(4) > a > button:hover {
-
-            width: 100px;
-            height: 30px;
-            background-color: transparent;
-            border: 2px solid black;
-            border-radius: 5px;
-            color: #171717;
-            font-family: Calibri;
+        .project-hover > p:nth-child(1) {
+            margin-bottom: 75px;
+            color: #262626;
             font-weight: bold;
-            box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
+            font-size: 25px;
         }
+
+        .project-hover > p:nth-child(2) {
+            margin-bottom: 50px;
+            color: #111111;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .project-hover > a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #1d1d1d;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .project-img-area {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project-img-area:hover {
+
+            border: 3px solid #dcdcdc;
+            background-color: transparent;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .project-img-area:hover > div {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project-img-area > img {
+            width: 100%;
+        }
+
 
         .edu-container {
             width: 100%;
@@ -503,11 +489,16 @@
             color: #1d1d1d;
             max-width: 286px;
             line-height: 65px;
-            padding-right: 50px;
+            padding-right: 0;
             font-size: 18px;
-            align-items: center;
         }
-
+        .contact-container > section > section:nth-child(1) > section > a{
+            color: #1d1d1d;
+        }
+        .contact-container > section > section:nth-child(1) > section > a > i {
+            margin-right: 20px;
+            font-size: 25px;
+        }
         .contact-container > section > section:nth-child(1) > section > i {
             margin-right: 20px;
             font-size: 25px;
@@ -624,9 +615,10 @@
         <section class="about-me-text-container">
 
             <img src="assets/images/me.JPG">
-            <button>
-                Download CV
-            </button>
+            <a download href="assets/PDF/Abheetha-Dilushan.pdf">
+                <button>Download CV</button>
+            </a>
+
             <div>
                 <p>Hello Visitor</p>
                 <p>
@@ -639,40 +631,52 @@
             </div>
         </section>
     </section>
+
     <section id="project">
         <h1>Project</h1>
-        <section class="project-container">
-
-                <section>
-                    <p>Case 1</p>
-                    <p>Navigation transition</p>
-                    <a href="myProjects/css/Transitions/case-1.html">
-                        <button> Show</button>
-                    </a>
-                </section>
-                <section>
-                    <p>Case 2</p>
-                    <p>Circle Border transition</p>
-                    <a href="myProjects/css/Transitions/case-2.html">
-                        <button> Show</button>
-                    </a>
-                </section>
-                <section>
-                    <p>Case 3</p>
-                    <p>Basic Rotation with animation</p>
-                    <a href="myProjects/css/Animations/case-1.html">
-                        <button> Show</button>
-                    </a>
-                </section>
-                <section>
-                    <p>Case 4</p>
-                    <p>Water Drop Animation</p>
-                    <a href="myProjects/css/Animations/case-2.html">
-                        <button>Show</button>
-                    </a>
-                </section>
-
+        <section class="project-main-container">
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 1</p>
+                        <p>Navigation transition</p>
+                        <a href="myProjects/css/Transitions/case-1.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-1.png" alt="case-1">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 2</p>
+                        <p>Circle Border transition</p>
+                        <a href="myProjects/css/Transitions/case-2.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-2.png" alt="case-2">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 3</p>
+                        <p>Basic Rotation with animation</p>
+                        <a href="myProjects/css/Animations/case-1.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-3.png" alt="case-3">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 4</p>
+                        <p>Water Drop Animation</p>
+                        <a href="myProjects/css/Animations/case-2.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-4.png" alt="case-4">
+                </div>
+            </div>
         </section>
+    </section>
     </section>
     <section id="education" class="edu-container">
         <h1>Education</h1>
@@ -717,9 +721,9 @@
         <h2>Contact</h2>
         <section>
             <section>
-                <section><i class="fas fa-map-marker-alt"></i>100, Moragalla, Beruwala</section>
-                <section><i class="fas fa-envelope"></i>abeetha.dilushan@gmail.com</section>
-                <section><i class="fas fa-phone"></i>+94763314450</section>
+                <section><i class="fas fa-map-marker-alt" ></i>100, Moragalla, Beruwala</section>
+                <section><a href="mailto:abeetha.dilushan@gmail.com"><i class="fas fa-envelope"></i>abeetha.dilushan@gmail.com</a></section>
+                <section><a href="callto:+94763314450"><i class="fas fa-phone"></i>+94763314450</a></section>
             </section>
             <section>
 
