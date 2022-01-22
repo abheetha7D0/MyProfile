@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"><!--Main Root-->
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
-<!--Document meta data-->
 <head>
     <title>My Profile</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
-    <link href="assets/images/icon.png" rel="icon">
-    <meta content="IJSE, CMJD, Software Engineer" name="keywords">
+    <link href="assets/icon/logo.jpg" rel="icon">
+    <meta content="Software Engineer hire" name="description">
+    <meta content="IJSE, Software Engineer, Abheetha Dilushan, Web Designer, Abheetha" name="keywords">
+    <meta content="Abheetha Dilushan" name="author">
     <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
     <style>
         body > main > section {
             height: 100vh;
@@ -16,36 +18,63 @@
         }
 
         header {
-            position: relative;
-            height: 68px;
+            display: block;
         }
 
-        header > img {
-            width: 29px;
-            margin: 17px;
+        header > section {
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+            height: 40px;
         }
 
-        header > ul {
+        header > section > nav {
             position: absolute;
-            right: 18px;
-            bottom: 0;
-            font-size: 24px;
-            font-family: 'Lobster', cursive;
-            list-style: none;
-            color: #eeecec;
+            display: flex;
+            flex-direction: row;
+            margin-left: 36%;
+            margin-top: -5px;
 
         }
 
-        header > ul > li {
-            padding: 0 10px 0 10px;
+        header > section > nav > img {
+            width: 32px;
+            margin: 17px;
+            position: relative;
+            top: -4px;
+            left: -552px;
+        }
+
+        header > section > nav > ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 20px;
+            margin-inline-end: 0px;
+            padding-inline-start: 203px;
+        }
+
+        header > section > nav > ul > li {
+            padding: 0 59px 0 1px;
             display: inline-block;
         }
 
-        header > ul > li:hover {
-            cursor: pointer;
-            color: #00ffff;
+        header > section > nav > ul > li > a {
+            color: #1c1c1c;
+            font-weight: bold;
+            text-decoration: unset;
+            position: relative;
         }
 
+<<<<<<< HEAD
+=======
+        header > section > nav > ul > li > a:hover {
+            cursor: pointer;
+            color: #575757;
+        }
+
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
 
         main > section > div > img {
             width: 32%;
@@ -54,8 +83,9 @@
 
         #home {
 
-            background: url(assets/images/laptop.jfif) center;
+            background: url(assets/images/cover.jpg) center;
             background-size: cover;
+            opacity: 0.9;
         }
 
         #about-me {
@@ -89,14 +119,14 @@
             position: absolute;
             bottom: 50%;
             letter-spacing: 2px;
-            color: #9e9e9e;
+            color: #666666;
             font-weight: bold;
             font-size: 45px;
             font-family: Calibri;
         }
 
         .home-text-container > h2 {
-            color: white;
+            color: #131313;
             font-weight: bold;
             font-size: 60px;
             font-family: Calibri;
@@ -106,7 +136,7 @@
             position: absolute;
             left: 80%;
             letter-spacing: 1px;
-            color: white;
+            color: #1a1a1a;
             font-weight: bold;
             font-size: 30px;
             font-family: Calibri;
@@ -154,13 +184,12 @@
 
         .about-me-text-container > div > p:nth-child(2) {
             color: #262626;
-            font-family: Calibri Light;
+            font-family: Calibri Light, serif;
             font-weight: bold;
             font-size: 20px;
-            font-weight: bold;
         }
 
-        .about-me-text-container > button {
+        .about-me-text-container > a > button {
             position: absolute;
             left: 13%;
             bottom: 5%;
@@ -169,12 +198,12 @@
             color: #ffffff;
             outline: none;
             border: none;
-            font-family: Calibri;
+            font-family: Calibri, serif;
             background-color: #111111;
             border-radius: 5px;
         }
 
-        .about-me-text-container > button:hover {
+        .about-me-text-container > a > button:hover {
             position: absolute;
             left: 13%;
             bottom: 5%;
@@ -185,29 +214,280 @@
             border: 2px solid #000000;
             font-family: Calibri;
             font-weight: bold;
-            background-color: #e5e5e5;
+            background-color: transparent;
             border-radius: 5px;
         }
 
+        #education > h1 {
+            color: #171717;
+            text-align: center;
+            font-size: 40px;
+
+        }
+
         #project > h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .project-main-container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .project-single-move-card {
+            width: 300px;
+            height: 300px;
+
+            position: relative;
+        }
+
+        .project-hover {
+            position: absolute;
+            background: transparent;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .project-hover > p:nth-child(1) {
+            margin-bottom: 75px;
+            color: #262626;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .project-hover > p:nth-child(2) {
+            margin-bottom: 50px;
+            color: #111111;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .project-hover > a {
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #1d1d1d;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .project-img-area {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project-img-area:hover {
+
+            border: 3px solid #dcdcdc;
+            background-color: transparent;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .project-img-area:hover > div {
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project-img-area > img {
+            width: 100%;
+        }
+
+
+        .edu-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .edu-line {
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .edu-line > ul {
+            list-style: none;
+        }
+
+        .edu-line > ul > li {
+            padding: 20px;
+            background-color: transparent;
+            color: #1f1f1f;
+            border-radius: 10px;
+            border-top: 2px solid #1d1d1d;
+        }
+
+        .edu-line > ul > li:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-text-content h1 {
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 5px;
+        }
+
+        .edu-text-content p {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 300;
+            color: #000000;
+            opacity: 60%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .edu-line::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 3px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #363636;
+            }
+
+            .edu-line > ul > li {
+                width: 50%;
+                margin-bottom: 5px;
+                position: relative;
+            }
+
+            .edu-line > ul > li:nth-child(odd) {
+                float: left;
+                clear: right;
+                transform: translateX(-80px);
+            }
+
+            .edu-line > ul > li:nth-child(even) {
+                float: right;
+                clear: left;
+                transform: translateX(40px);
+            }
+
+            .edu-line > ul > li::after {
+                content: '';
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                background-color: #1d1d1d;
+                border-radius: 50%;
+                top: 0;
+            }
+
+            .edu-line > ul > li:nth-child(odd)::after {
+                right: -30px;
+            }
+
+            .edu-line > ul > li:nth-child(even)::after {
+                left: -30px;
+            }
+        }
+
+        #gallery > h1 {
             color: white;
             text-align: center;
             font-size: 40px;
 
         }
 
-        .project-container > section {
-            width: 300px;
-            height: 300px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #2e3136;
-            box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
-            border: 2px solid red;
+        .gallery-container {
+            width: 1000px;
+            height: 500px;
+            bottom: 200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .gallery-container > section {
+            width: 450%;
+            height: 100%;
             display: flex;
+            animation-name: slideme;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .gallery-container > section > div {
+            width: 100%;
+        }
+
+        .gallery-container > section > div:nth-child(1) {
+
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-container > section > div:nth-child(2) {
+
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-container > section > div:nth-child(3) {
+
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .gallery-container > section > div:nth-child(4) {
+
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slideme {
+            0%, 15% {
+                transform: translateX(0);
+            }
+            25%, 40% {
+                transform: translateX(-25%);
+            }
+            50%, 70% {
+                transform: translateX(-50%);
+            }
+
+            80%, 100% {
+                transform: translateX(-75%);
+            }
+        }
+
+        .contact-container > section {
+            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
+
+        }
+
+        .contact-container > section > section:nth-child(1) {
+            margin: 0;
+            padding: 10%;
+            display: flex;
             flex-direction: column;
+<<<<<<< HEAD
         }
 
         .project-container {
@@ -242,12 +522,37 @@
             border-radius: 50%;
             background-color: #ffffff;
             display: flex;
+=======
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
             justify-content: center;
-            align-items: center;
-            font-family: Calibri;
-            font-weight: bold;
+            color: #1d1d1d;
+            max-width: 286px;
+            line-height: 65px;
+            padding-right: 0;
+            font-size: 18px;
+        }
+        .contact-container > section > section:nth-child(1) > section > a{
+            color: #1d1d1d;
+        }
+        .contact-container > section > section:nth-child(1) > section > a > i {
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        .contact-container > section > section:nth-child(1) > section > i {
+            margin-right: 20px;
+            font-size: 25px;
         }
 
+        .contact-container > section > section {
+            flex: 1;
+        }
+
+        .contact-container > section > section:nth-child(2) {
+            margin-left: -85px;
+            align-items: center;
+        }
+
+<<<<<<< HEAD
         .project-container > section:nth-child(1) > p:nth-child(2),
         .project-container > section:nth-child(2) > p:nth-child(2),
         .project-container > section:nth-child(3) > p:nth-child(2),
@@ -264,11 +569,16 @@
         .project-container > section:nth-child(4) > p:nth-child(3) {
             color: #dedede;
             font-size: 35px;
+=======
+        .contact-container > h2 {
+            color: #1d1d1d;
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
             text-align: center;
-            width: 230px;
-            margin: 0px 0px 20px 0px;
+            font-size: 30px;
+            text-transform: uppercase;
         }
 
+<<<<<<< HEAD
         .project-container > section:nth-child(1) > a > button,
         .project-container > section:nth-child(2) > a > button,
         .project-container > section:nth-child(3) > a > button,
@@ -278,11 +588,60 @@
             height: 30px;
             color: #eeeeee;
             background-color: black;
+=======
+        .contact-container > section > section:nth-child(2) .text-box {
+            margin-left: 25%;
+            background: #000000;
+            color: white;
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
             border: none;
-            outline: none;
+            width: calc(50% - 5px);
+            height: 50px;
+            padding: 12px;
+            font-size: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-container > section > section:nth-child(2) .text-box:first-child {
+            margin-right: 10px;
+        }
+
+        .contact-container > section > section:nth-child(2) > form > textarea {
+            margin-left: 25%;
+            background: #000000;
+            color: white;
+            border: none;
+            width: calc(50% - 5px);
+            padding: 12px;
+            font-size: 15px;
+            min-height: 200px;
+            max-height: 400px;
+            resize: vertical;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .contact-container > section > section:nth-child(2) > form > button {
+            margin-right: 23%;
+            float: right;
+            background: #282828;
+            color: white;
+            border: none;
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             border-radius: 5px;
         }
 
+<<<<<<< HEAD
         .project-container > section:nth-child(1) > a > button:hover,
         .project-container > section:nth-child(2) > a > button:hover,
         .project-container > section:nth-child(3) > a > button:hover,
@@ -297,6 +656,12 @@
             font-family: Calibri;
             font-weight: bold;
             box-shadow: 3px 2px 12px rgba(255, 255, 255, 0.2);
+=======
+        .contact-container > section > section:nth-child(2) > form > button:hover {
+            background: transparent;
+            color: #131313;
+            border: 2px solid black;
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
         }
 #gallery > h1{
     width: 40px;
@@ -371,16 +736,22 @@
 <main>
     <section id="home">
         <header>
-            <img alt="" src="assets/images/icon.png">
+            <section>
+                <nav>
 
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Project</li>
-                <li>Education</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-            </ul>
+                    <img alt="logo" src="assets/icon/logo.jpg">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </nav>
+            </section>
+
         </header>
 
         <section class="home-text-container">
@@ -392,16 +763,16 @@
         </section>
 
     </section>
-
     <section id="about-me">
         <h2 align="center">About Me</h2>
 
         <section class="about-me-text-container">
 
             <img src="assets/images/me.JPG">
-            <button>
-                Download CV
-            </button>
+            <a download href="assets/PDF/Abheetha-Dilushan.pdf">
+                <button>Download CV</button>
+            </a>
+
             <div>
                 <p>Hello Visitor</p>
                 <p>
@@ -414,8 +785,10 @@
             </div>
         </section>
     </section>
+
     <section id="project">
         <h1>Project</h1>
+<<<<<<< HEAD
         <section class="project-container">
 
             <section>
@@ -451,18 +824,88 @@
                     <button>Show</button>
                 </a>
             </section>
+=======
+        <section class="project-main-container">
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 1</p>
+                        <p>Navigation transition</p>
+                        <a href="myProjects/css/Transitions/case-1.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-1.png" alt="case-1">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 2</p>
+                        <p>Circle Border transition</p>
+                        <a href="myProjects/css/Transitions/case-2.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-2.png" alt="case-2">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 3</p>
+                        <p>Basic Rotation with animation</p>
+                        <a href="myProjects/css/Animations/case-1.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-3.png" alt="case-3">
+                </div>
+            </div>
+            <div class="project-single-move-card">
+                <div class="project-img-area">
+                    <div class="project-hover">
+                        <p>Case 4</p>
+                        <p>Water Drop Animation</p>
+                        <a href="myProjects/css/Animations/case-2.html" class="project-show">SHOW</a>
+                    </div>
+                    <img src="assets/images/case-4.png" alt="case-4">
+                </div>
+            </div>
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
         </section>
     </section>
-
-    <section id="education">
-        <h1>Education</h1>
     </section>
+    <section id="education" class="edu-container">
+        <h1>Education</h1>
+        <div class="edu-line">
 
-
+            <ul>
+                <li>
+                    <div class="edu-text-content">
+                        <h1>IJSE | Institute of Software Engineering</h1>
+                        <p>Since 2020</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-text-content">
+                        <h1>K/Wadduwa Central College</h1>
+                        <p>until 2019</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="edu-text-content">
+                        <h1>K/Ariyawansha Maha Vidyalaya</h1>
+                        <p>until 2016</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section id="gallery">
+<<<<<<< HEAD
         <h1 align="center">Gallery</h1>
         <main class="gallery-container">
             <section >
+=======
+        <h1>Gallery</h1>
+        <main class="gallery-container">
+            <section>
+>>>>>>> 6db8a3a2f7fd8ec19b951faec6a5d1864b1a1a43
                 <div></div>
                 <div></div>
                 <div></div>
@@ -472,28 +915,34 @@
 
 
     </section>
+    <section id="contact" class="contact-container">
+        <h2>Contact</h2>
+        <section>
+            <section>
+                <section><i class="fas fa-map-marker-alt" ></i>100, Moragalla, Beruwala</section>
+                <section><a href="mailto:abeetha.dilushan@gmail.com"><i class="fas fa-envelope"></i>abeetha.dilushan@gmail.com</a></section>
+                <section><a href="callto:+94763314450"><i class="fas fa-phone"></i>+94763314450</a></section>
+            </section>
+            <section>
 
-    <section id="contact">
+                <form class="contact" action="" method="post">
 
-        <fieldset>
-            <legend>Contact</legend>
+                    <input id="txtName" type="text" class="text-box" placeholder="Your Name"><br><br>
 
-            <label for="txtName">Name</label>
-            <input id="txtName" type="text" placeholder="Name"><br><br>
+                    <input id="txtEmail" type="text" class="text-box" placeholder="Your Email"><br><br>
 
-            <label for="txtEmail">Address</label>
-            <input id="txtEmail" type="text" placeholder="Email"><br><br>
+                    <textarea id="txtAdd" placeholder="your message"></textarea>
+                    </br>
+                    <button>Send</button>
+                </form>
+            </section>
+        </section>
 
-            <label for="txtAdd">Address</label>
-            <textarea id="txtAdd">
-            </textarea>
-            <button>Send</button>
-        </fieldset>
     </section>
 </main>
 
 <footer>
-    <h4>All rights reserved</h4>
+    <h4 align="center">All rights reserved</h4>
     <address></address>
     <address></address>
     <address></address>

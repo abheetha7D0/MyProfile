@@ -1,6 +1,16 @@
 # My-Profile
 This Is The Repo For Portfolio Website.
 
+Site map    :-  https://www.gloomaps.com/byzGhVbc4G
+
+Wireframe   :-  https://wireframe.cc/dyt6WF
+
+Mockup      :-  https://www.figma.com/file/QyEXDnpWLOel6Uj3aRWRfi/Untitled?node-id=0%3A1
+
+Github Page :-  https://abheetha7d0.github.io/MyProfile/
+
+000WebHost  :-  https://abheethaprofile.000webhostapp.com/
+
 # <u>Site Overview.</u>
 
 This Is Just A Basic Overview Only
