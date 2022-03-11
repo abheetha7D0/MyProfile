@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyProjects</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        body>header h1{
+            color: white;
+            font-size: 70px;
+        }
+
+        .area{
+            position: relative;
+            height: 400px;
+            top:30px
+        }
+        .area div{
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .area>div>h1{
+            position: absolute;
+            top: 0;
+            font-size: 50px;
+        }
+        .area>div>div{
+            border: 2px solid #3b3939;
+            top: 0;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .area>div>div>h1{
+            position: absolute;
+            color: #000000;
+            font-size: 20px;
+            top: 50px;
+            font-family: 'Kufam', sans-serif;
+            text-align: center;
+        }
+        .area>div>div>p{
+            position: absolute;
+            color: #4c4a4a;
+            font-size: 18px;
+            bottom: 35%;
+            font-family: 'Kufam', sans-serif;
+            text-align: center;
+        }
+        .area>div:nth-child(2)>div{
+            position: relative;
+            top: -100px;
+        }
+        .area>div:nth-child(3)>div{
+            position: relative;
+            top: -200px;
+        }
+        .load-more{
+            position: absolute;
+            bottom: -45px;
+        }
+        .load-more>a{
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 20px;
+            color: #000000;
+            background-color: transparent;
+            border: 2px solid #000000;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-top: 30px;
+            transition-property: background-color, color;
+            bottom: 0px;
+        }
+        .load-more>a:hover{
+            background-color: #3e3e3e;
+        }
+
+    </style>
+</head>
+<body>
+<section class="area">
+    <div>
+        <h1>Course Work</h1>
+
+
+    </div>
+</section>
+<section class="area">
+    <div>
+        <h1>Assignment</h1>
+        <diV><h1>Assignment 01</h1>
+            <p>Transitions</p>
+            <div class="load-more">
+                <a href="myProjects/css/Transitions/case-1.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 02</h1>
+            <p>Transitions</p>
+            <div class="load-more">
+                <a href="myProjects/css/Transitions/case-2.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 03</h1>
+            <p>Animations</p>
+            <div class="load-more">
+                <a href="myProjects/css/Animations/case-1.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 04</h1>
+            <p>Animations</p>
+            <div class="load-more">
+                <a href="myProjects/css/Animations/case-2.html">View</a>
+            </div>
+        </diV>
+    </div>
+    <div>
+        <diV><h1>Assignment 05</h1>
+            <p>Animations</p>
+            <div class="load-more">
+                <a href="myProjects/css/Animations/case-3.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 06</h1>
+            <p>Animations</p>
+            <div class="load-more">
+                <a href="myProjects/css/Animations/case-4.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 07</h1>
+            <p>Layouts</p>
+            <div class="load-more">
+                <a href="myProjects/css/Layouts/Assignment-1.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 08</h1>
+            <p>Layouts</p>
+            <div class="load-more">
+                <a href="myProjects/css/Layouts/Assignment-2.html">View</a>
+            </div>
+        </diV>
+    </div>
+    <div>
+        <diV><h1>Assignment 09</h1>
+            <p>Layouts</p>
+            <div class="load-more">
+                <a href="myProjects/css/Layouts/Assignment-3.html">View</a>
+            </div>
+        </diV>
+        <diV><h1>Assignment 10</h1>
+            <p>Layouts</p>
+            <div class="load-more">
+                <a href="myProjects/css/Layouts/Assignment-4.html">View</a>
+            </div>
+        </diV>
+
+    </div>
+</section>
+</body>
+</html>

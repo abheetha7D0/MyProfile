@@ -222,40 +222,104 @@
 
         }
 
-        #project > h1 {
-            color: #ffffff;
-            text-align: center;
-            font-size: 40px;
-
-        }
-
-        .project-main-container {
+        .assignment-area{
             position: relative;
-            z-index: 2;
-            width: 90%;
-            margin: 0 auto;
+            height: 400px;
+            top:30px
+        }
+        .assignment-area div{
+            position: relative;
+            height: 400px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
-
-        .project-single-move-card {
-            width: 300px;
-            height: 300px;
-
-            position: relative;
-        }
-
-        .project-hover {
+        .assignment-area>div>h1{
             position: absolute;
-            background: transparent;
+            top: 0;
+            font-size: 50px;
+        }
+        .assignment-area>div>div{
+            border: 2px solid #3b3939;
+            top: 0;
+            width: 300px;
+            height: 200px;
             text-align: center;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            visibility: hidden;
+        }
+        .assignment-area>div>div>h1{
+            position: absolute;
+            color: #eeeeee;
+            font-size: 20px;
+            top: 50px;
+            font-family: 'Kufam', sans-serif;
+            text-align: center;
+        }
+        .assignment-area>div>div>p{
+            position: absolute;
+            color: #7f7f7f;
+            font-size: 18px;
+            bottom: 35%;
+            font-family: 'Kufam', sans-serif;
+            text-align: center;
+        }
+        .assignment-area>div:nth-child(2)>div{
+            position: relative;
+            top: -100px;
+        }
+        .assignment-area>div:nth-child(3)>div{
+            position: relative;
+            top: -200px;
+        }
+        .load-moreProject{
+            position: absolute;
+            bottom: -45px;
         }
 
+        .load-moreProject>a{
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 20px;
+            color: #c9c9c9;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 10%;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-top: 30px;
+            transition-property: background-color, color;
+            bottom: 0px;
+        }
+        .load-moreProject>a:hover{
+            background-color: #3d3d3d;
+        }
+        .assignment-area-Show-more{
+            position: relative;
+           left: 45%;
+
+        }
+        .assignment-area-Show-more>a{
+            position: relative;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 20px;
+            color: #c9c9c9;
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            border-radius: 10%;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-top: 30px;
+            transition-property: background-color, color;
+            bottom: 0px;
+        }
+        .assignment-area-Show-more>a:hover{
+            background-color: #7b7b7b;
+        }
         .project-hover > p:nth-child(1) {
             margin-bottom: 75px;
             color: #262626;
@@ -278,19 +342,10 @@
             color: #ffffff;
             font-weight: bold;
         }
-
-        .project-img-area {
-            transition: all 0.3s ease-in-out;
-        }
-
-        .project-img-area:hover {
-
-            border: 3px solid #dcdcdc;
-            background-color: transparent;
-            height: 100%;
-            width: 100%;
+        #project > h1{
+            color: white;
             text-align: center;
-
+            font-size: 40px;
         }
 
         .project-img-area:hover > div {
@@ -632,51 +687,37 @@
     </section>
 
     <section id="project">
-        <h1>Project</h1>
-        <section class="project-main-container">
-            <div class="project-single-move-card">
-                <div class="project-img-area">
-                    <div class="project-hover">
-                        <p>Case 1</p>
-                        <p>Navigation transition</p>
-                        <a href="myProjects/css/Transitions/case-1.html" class="project-show">SHOW</a>
+        <h1 >Project And Assignment</h1>
+        <section class="assignment-area">
+            <div>
+                <h1>Assignment</h1>
+                <diV><h1>Assignment 01</h1> <p>Transitions Assignment</p>
+                    <div class="load-moreProject">
+                        <a href="myProjects/css/Transitions/case-1.html">View</a>
                     </div>
-                    <img src="assets/images/case-1.png" alt="case-1">
-                </div>
-            </div>
-            <div class="project-single-move-card">
-                <div class="project-img-area">
-                    <div class="project-hover">
-                        <p>Case 2</p>
-                        <p>Circle Border transition</p>
-                        <a href="myProjects/css/Transitions/case-2.html" class="project-show">SHOW</a>
+                </diV>
+                <diV><h1>Assignment 02</h1> <p>Transitions Assignment</p>
+                    <div class="load-moreProject">
+                        <a href="myProjects/css/Transitions/case-2.html">View</a>
                     </div>
-                    <img src="assets/images/case-2.png" alt="case-2">
-                </div>
-            </div>
-            <div class="project-single-move-card">
-                <div class="project-img-area">
-                    <div class="project-hover">
-                        <p>Case 3</p>
-                        <p>Basic Rotation with animation</p>
-                        <a href="myProjects/css/Animations/case-1.html" class="project-show">SHOW</a>
+                </diV>
+                <diV><h1>Assignment 03</h1> <p>Animations Assignment</p>
+                    <div class="load-moreProject">
+                        <a href="myProjects/css/Animations/case-1.html">View</a>
                     </div>
-                    <img src="assets/images/case-3.png" alt="case-3">
-                </div>
-            </div>
-            <div class="project-single-move-card">
-                <div class="project-img-area">
-                    <div class="project-hover">
-                        <p>Case 4</p>
-                        <p>Water Drop Animation</p>
-                        <a href="myProjects/css/Animations/case-2.html" class="project-show">SHOW</a>
+                </diV>
+                <diV><h1>Assignment 04</h1> <p>Animations Assignment</p>
+                    <div class="load-moreProject">
+                        <a href="myProjects/css/Animations/case-2.html">View</a>
                     </div>
-                    <img src="assets/images/case-4.png" alt="case-4">
-                </div>
+                </diV>
             </div>
         </section>
+        <div class="assignment-area-Show-more">
+            <a href="myProjects.html">Show More</a>
+        </div>
     </section>
-    </section>
+
     <section id="education" class="edu-container">
         <h1>Education</h1>
         <div class="edu-line">
