@@ -5,69 +5,78 @@
     <title>MyProjects</title>
 
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
 
         }
-        body>header h1{
+
+        body > header h1 {
             color: white;
             font-size: 70px;
         }
 
-        .area{
+        .area {
             position: relative;
             height: 400px;
-            top:30px
+            top: 30px
         }
-        .area div{
+
+        .area div {
             position: relative;
             height: 400px;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
         }
-        .area>div>h1{
+
+        .area > div > h1 {
             position: absolute;
             top: 0;
             font-size: 50px;
         }
-        .area>div>div{
+
+        .area > div > div {
             border: 2px solid #3b3939;
             top: 0;
             width: 300px;
             height: 200px;
             text-align: center;
         }
-        .area>div>div>h1{
+
+        .area > div > div > h1 {
             position: absolute;
             color: #000000;
             font-size: 20px;
             top: 50px;
-            font-family: 'Kufam', sans-serif;
             text-align: center;
         }
-        .area>div>div>p{
+
+        .area > div > div > p {
             position: absolute;
             color: #4c4a4a;
             font-size: 18px;
             bottom: 35%;
-            font-family: 'Kufam', sans-serif;
+            font-family: Calibri;
             text-align: center;
         }
-        .area>div:nth-child(2)>div{
+
+        .area > div:nth-child(2) > div {
             position: relative;
             top: -100px;
         }
-        .area>div:nth-child(3)>div{
+
+        .area > div:nth-child(3) > div {
             position: relative;
             top: -200px;
         }
-        .load-more{
+
+        .load-more {
             position: absolute;
             bottom: -45px;
         }
-        .load-more>a{
+
+        .load-more > a {
             position: relative;
             text-decoration: none;
             display: inline-block;
@@ -75,6 +84,7 @@
             color: #000000;
             background-color: transparent;
             border: 2px solid #000000;
+            border-radius: 5%;
             font-size: 13px;
             font-weight: bold;
             text-transform: uppercase;
@@ -83,7 +93,8 @@
             transition-property: background-color, color;
             bottom: 0px;
         }
-        .load-more>a:hover{
+
+        .load-more > a:hover {
             background-color: #3e3e3e;
         }
 
@@ -93,7 +104,12 @@
 <section class="area">
     <div>
         <h1>Course Work</h1>
-
+        <diV><h1>JS Course Work</h1>
+            <p>Web POS</p>
+            <div class="load-more">
+                <a href="https://abheetha7d0.github.io/Web-POS/">View</a>
+            </div>
+        </diV>
 
     </div>
 </section>
