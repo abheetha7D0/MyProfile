@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KITTtheme </title>
+  <link href="assets/css/Style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Knight Rider</h1>
+<div id="line1"></div>
+<div id="line2"></div>
+
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+
+
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+  var colors = ['red', 'rgba(198,84,84,0.68)', 'rgba(208,153,153,0.68)', 'white'];
+  let count = 0;
+  let revIndex = 0;
+  let timeId;
+
+  clearInterval(timeId);
+  timeId = setInterval(changeColor, 200);
+
+  function changeColor() {
+    if (count == 16) {
+      count = 0;
+      revIndex=0;
+    }
+    $("#box1").css('background-color', colors[count]);
+    $("#box2").css('background-color', colors[count - 1]);
+    $("#box3").css('background-color', colors[count - 2]);
+    $("#box4").css('background-color', colors[count - 3]);
+
+    if (count >= 8) {
+      $("#box1").css('background-color', colors[revIndex - 3]);
+      $("#box2").css('background-color', colors[revIndex - 2]);
+      $("#box3").css('background-color', colors[revIndex - 1]);
+      $("#box4").css('background-color', colors[revIndex]);
+      revIndex++;
+    }
+    count++;
+  }
+
+</script>
+</body>
+</html>
