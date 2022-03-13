@@ -11,6 +11,15 @@ body>h1{
     color: #9e6a6a;
     font-size: 25px;
 }
+#light{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
 #line1{
     width: 900px;
     height: 0px;
@@ -61,16 +70,4 @@ body>h1{
     border-radius: 10px;
     top: 275px;
     left: 780px;
-}
-#start,#stop{
-    position: relative;
-    border: 2px solid white;
-    background: black;
-    color: white;
-    font-size: 25px;
-    padding: 10px 20px;
-    margin: 10px;
-    top: 400px;
-
-
 }
